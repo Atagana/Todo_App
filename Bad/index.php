@@ -1,3 +1,12 @@
+<?php
+    $con = new PDO("mysql:host=localhost;port=3306;dbname=todolist_app", 'root', '');
+    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    if ($_SERVER['REQUEST_METHOD'] === "POST") {
+        # code...
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +29,7 @@
                     <div class="container-fluid">
                         <a class="navbar-brand">CBTA</a>
                         <form class="d-flex" role="search" action="" method="">
-                            <a href="public/login.php" class="btn btn-primary"><i class="fa-solid fa-circle-user display-inline-block"></i></a>
+                            <a href="login.php" class="btn btn-primary"><i class="fa-solid fa-circle-user display-inline-block"></i></a>
                         </form>
                     </div>
                 </nav>
